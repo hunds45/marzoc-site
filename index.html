@@ -510,6 +510,17 @@
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 </head>
+  <style>
+  model-viewer {
+    width: 100%;
+    height: 500px;  /* force visible height */
+    display: block;
+    background-color: #eee; /* so you can see the area */
+    z-index: 10; /* make sure nothing overlaps it */
+    position: relative;
+  }
+</style>
+
 <body>
   <div id="preloader"><div class="spinner"></div></div>
   <header class="topbar">
@@ -1038,6 +1049,7 @@
   </script>
 </body>
 </html>
+
 
 
 
